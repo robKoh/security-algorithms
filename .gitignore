@@ -4,6 +4,7 @@ target/
 !**/src/main/**
 !**/src/test/**
 rsa-keys/src/main/java/de/hwr/rsakey/files/*
+!rsa-keys/src/main/java/de/hwr/rsakey/files/input.txt
 
 ### STS ###
 .apt_generated

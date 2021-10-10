@@ -1,0 +1,2 @@
+Diese Datei wird mit dem privaten Schlüssel verschlüsselt.
+Der Inhalt wird nachher nicht mehr brauchbar sein.
