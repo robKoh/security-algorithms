@@ -1,4 +1,4 @@
-package com.hwr.bcrypt;
+package de.hwr.bcrypt;
 
 import org.junit.jupiter.api.Test;
 

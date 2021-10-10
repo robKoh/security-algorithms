@@ -1,4 +1,4 @@
-package com.hwr.blockchain;
+package de.hwr.blockchain;
 
 import org.junit.jupiter.api.Test;
 

@@ -1,4 +1,4 @@
-package com.hwr.bcrypt;
+package de.hwr.bcrypt;
 
 // Copyright (c) 2006 Damien Miller <djm@mindrot.org>
 //

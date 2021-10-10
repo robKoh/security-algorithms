@@ -1,4 +1,4 @@
-package com.hwr.blockchain;
+package de.hwr.blockchain;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
