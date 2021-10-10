@@ -3,6 +3,7 @@ target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**
 !**/src/test/**
+rsa-keys/src/main/java/de/hwr/rsakey/files/*
 
 ### STS ###
 .apt_generated
