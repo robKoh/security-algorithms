@@ -1,5 +1,6 @@
 package de.hwr.rsakey;
 
+import de.hwr.rsakey.signature.DigitalSignatureCreation;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -44,7 +45,7 @@ class TestGeneratingRsaKeyPair {
         boolean isCorrect = signature.verify(signatureBytes);
 
         Assertions.assertTrue(isCorrect, "FAILED! The digital signature was not correctly generated.");
-        LOGGER.log(Level.INFO, "PERFECT! The digital signature was correctly generated.");
+        LOGGER.info("PERFECT! The digital signature was correctly generated.");
     }
 
     private void setEnvironmentForVerifyingDigitalSignature() throws Exception {
