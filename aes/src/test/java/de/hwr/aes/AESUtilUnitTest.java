@@ -11,6 +11,7 @@ import javax.crypto.BadPaddingException;
 import javax.crypto.IllegalBlockSizeException;
 import javax.crypto.NoSuchPaddingException;
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.nio.file.Paths;
 import java.security.InvalidAlgorithmParameterException;
@@ -67,8 +68,11 @@ class AESUtilUnitTest implements WithAssertions {
         String msg = "Das Verschlüsseln und Entschlüsseln der Testdatei \"input.txt\" " +
                 "mit dem AES-Algorithmus hat funktioniert.";
         LOGGER.info(msg);
-        encryptedFile.delete();
-        decryptedFile.delete();
+
+        boolean hasDeleted = encryptedFile.delete();
+        if (!hasDeleted) throw new FileNotFoundException();
+        hasDeleted = decryptedFile.delete();
+        if (!hasDeleted) throw new FileNotFoundException();
     }
 
     @Test
