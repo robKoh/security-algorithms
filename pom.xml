@@ -12,6 +12,8 @@
         <module>bcrypt</module>
         <module>blockchain</module>
         <module>rsa-keys</module>
+        <module>aes</module>
+        <module>tls</module>
     </modules>
 
     <properties>
@@ -23,7 +25,7 @@
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>
-            <version>5.8.0-M1</version>
+            <version>5.8.1</version>
             <scope>test</scope>
         </dependency>
     </dependencies>

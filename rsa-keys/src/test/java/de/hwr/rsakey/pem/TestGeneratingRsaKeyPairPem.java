@@ -24,7 +24,7 @@ class TestGeneratingRsaKeyPairPem {
 
         String encrypedText = RsaKeyPairPem.encrypt(keys.getPublicKey(), text);
         String decrypedText = RsaKeyPairPem.decrypt(keys.getPrivatekey(), encrypedText);
-        Assertions.assertEquals(text, decrypedText, "FAILURE! Es wurde nicht richtig verschlüsselt oder entschlüsselt.");
+        Assertions.assertEquals(text, decrypedText, "FEHLER! Es wurde nicht richtig verschlüsselt oder entschlüsselt.");
         String msg = String.format("Der Text \"%s\" wurde erfolgreich verschlüsselt und wieder entschlüsselt.", text);
         LOGGER.info(msg);
     }

@@ -15,7 +15,7 @@ class TestBcryptHashing {
         String generatedSecuredPasswordHash = BCrypt.hashpw(originalPassword, BCrypt.gensalt(12));
 
         boolean matched = BCrypt.checkpw(originalPassword, generatedSecuredPasswordHash);
-        String msg = String.format("FAILURE! Das ursprüngliche Passwort \"%s\" stimmt nicht mit dem generierten Hash-Password überein.", originalPassword);
+        String msg = String.format("FEHLER! Das ursprüngliche Passwort \"%s\" stimmt nicht mit dem generierten Hash-Password überein.", originalPassword);
         Assertions.assertTrue(matched, msg);
         LOGGER.info("Das Hashen von Passwörtern mit dem implementierten BCrypt-Algorithmus funktioniert.");
     }
