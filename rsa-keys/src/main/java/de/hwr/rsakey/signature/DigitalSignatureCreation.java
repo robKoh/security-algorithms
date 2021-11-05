@@ -1,7 +1,5 @@
 package de.hwr.rsakey.signature;
 
-import de.hwr.rsakey.RsaKeyPair;
-
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;

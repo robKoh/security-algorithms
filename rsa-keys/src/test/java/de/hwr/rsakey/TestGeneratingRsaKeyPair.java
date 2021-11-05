@@ -1,6 +1,7 @@
 package de.hwr.rsakey;
 
 import de.hwr.rsakey.signature.DigitalSignatureCreation;
+import de.hwr.rsakey.signature.RsaKeyPair;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -11,7 +12,6 @@ import java.security.KeyFactory;
 import java.security.PublicKey;
 import java.security.Signature;
 import java.security.spec.X509EncodedKeySpec;
-import java.util.logging.Level;
 import java.util.logging.Logger;
 
 class TestGeneratingRsaKeyPair {

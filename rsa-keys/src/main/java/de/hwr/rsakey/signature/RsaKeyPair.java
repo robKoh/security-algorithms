@@ -1,4 +1,4 @@
-package de.hwr.rsakey;
+package de.hwr.rsakey.signature;
 
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -10,7 +10,7 @@ public class RsaKeyPair {
 
     private static final Logger LOGGER = Logger.getLogger("RsaKeyPair");
     //FILE_PATH will be different on other systems.
-    public static final String FILE_PATH = "D:\\Dokumente-Schule\\HWR\\5. Semester\\Studienarbeit II\\Programme\\" +
+    public static final String FILE_PATH = "D:\\Dokumente-Schule\\HWR\\5. Semester\\Studienprojekt_II\\Programme\\" +
             "security-algorithms\\rsa-keys\\src\\main\\java\\de\\hwr\\rsakey\\files\\";
 
 
